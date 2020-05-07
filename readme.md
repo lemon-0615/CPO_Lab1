@@ -15,6 +15,7 @@ mutable version used used list to create a unrolled linked list
 In immutable version,we create a new unrolled linked list before modifying each unrolled linked list, and do not change the original linked list
 
 #contribution summary for each group member:
+
 mutable&mutable_test:Lin ningning
 
 immutable&immutable_test:Huang Yanlin
@@ -27,4 +28,4 @@ immutable&immutable_test:Huang Yanlin
  In immutable vesion, in order not to change the address of the original unrolled linked list, a new unrolled linked list is reassigned before the operation function of the original unrolled linked list, and then the operation is carried out.
 
 #conclusion and questions:
-This is the first time I use loose linked lists. Because the elements in the unrolled linked list are arrays, the unrolled linked list has the advantages of random array access and efficient insertion and deletion of the linked list. At the same time, because each node will carry multiple elements, the node space overhead of unrolled linked list is less. In the two different vesions, because list  is mutable in Python, so we can directly use it to implement unrolled linked list. In the implementation of immutable version, the original unrolled linked list needs to be preserved to avoid modification, so in the specific implementation, a new unrolled linked list is created to store the original unrolled linked list, and then the new linked list is modified. But we are not sure whether such an implementation meets the requirements.
+This is the first time I use loose linked lists. Because the elements in the unrolled linked list are arrays, the unrolled linked list has the advantages of random array access and efficient insertion and deletion of the linked list. At the same time, because each node will carry multiple elements, the node space overhead of unrolled linked list is less. In the two different vesions, because list  is mutable in Python, so we can directly use it to implement unrolled linked list. In the implementation of immutable version, the original unrolled linked list needs to be preserved to avoid modification, so in the specific implementation, a new unrolled linked list is created to store the original unrolled linked list, and then the new linked list is modified. But we are not sure whether such an implementation meets the requirements of lab1.
